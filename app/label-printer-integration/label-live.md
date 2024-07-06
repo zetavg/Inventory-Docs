@@ -124,7 +124,7 @@ Integrate a label printer via [Label LIVE](https://label.live/)'s [HTTP REST API
       labels.map(label => {
         return fetch(
           [
-            host,
+            options.host, 
             '/api/v1/print?design=',
             encodeURIComponent(options.design),
             '&variables=',
